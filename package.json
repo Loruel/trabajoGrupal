@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "name": "tipominiproyecto",
+  "version": "1.0.0",
+  "main": "crs/index.js",
+  "scripts": {
+    "dev": "node --watch crs/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mysql2": "^3.10.2"
+  }
+}
