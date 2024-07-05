@@ -1,6 +1,6 @@
 import http, { request } from 'node:http'
 import { PORT } from './config.js'
-import { index, mostrar } from './controller.js'
+import { index, mostrar, exportar, importar } from './controller.js'
 
 const server = http.createServer((request, response) =>{
     const url = request.url
@@ -25,11 +25,11 @@ const server = http.createServer((request, response) =>{
     if (method === 'POST') {
         switch (url) {
             case '/export':
-            
+                exportar(request, response)
                 break;
             
             case '/import':
-                
+                importar(request, response)
                 break;
         
             default: response.writeHead(404, { "Content-Type": 'text/plain, utf-8'})

@@ -1,0 +1,2 @@
+usuario_id, nombre, email, password, direccion
+8, Jose, jose@gmail.com, 123Jose, Avenida 4
